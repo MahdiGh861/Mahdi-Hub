@@ -52,6 +52,23 @@ nav .center ul {
   cursor: pointer;
 }
 
+nav .center ul:hover {
+  opacity: 1; /* Keep visible, as we're changing li colors */
+}
+
+nav .center ul li {
+  color: #fff; /* Default color for li */
+  transition: color 0.3s ease-in-out;
+}
+
+nav .center ul:hover li {
+  color: #000; /* All other li's turn black when ul is hovered */
+}
+
+nav .center ul li:hover {
+  color: #fff; /* Hovered li remains white */
+}
+
 nav .right {
   flex-basis: 500px;
 }
